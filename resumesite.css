@@ -1,0 +1,54 @@
+﻿body {
+    text-align: center;
+    background-color: azure;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+
+    margin: 50px 0 50 px 0;
+}
+
+main {
+
+    margin: 50px 0 50px 0;
+
+}
+
+.downloadResume {
+
+    margin: 50px 0 50px 0;
+}
+
+.letsConnect {
+
+    margin: 50px 0 50px 0;
+
+}
+
+.resumeIcon {
+    font-size: 100px;
+    color: black;
+}
+
+.resumeIcon:hover {
+    color: blue;
+}
+
+.connectIcon {
+    font-size: 50px;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.connectIcon:hover {
+    color: blue;
+}
