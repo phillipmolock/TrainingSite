@@ -18,15 +18,15 @@
         <div class="downloadResume">
 
             <p>Please click here to download my resume example:</p>
-            <a href="ResumeExample.docx" onclick="return reportCustomEvent();"><ion-icon name="document" class="resumeIcon" id="resumeDownload"></ion-icon></a>
+            <a href="ResumeExample.docx" onclick="return reportCustomEvent('Resume','Download');"><ion-icon name="document" class="resumeIcon" id="resumeDownload"></ion-icon></a>
 
         </div>
         <div class="letsConnect">
             Let's connect!
             <ul>
-                <li><a href="mailto:phillip.molock@outlook.com"><ion-icon name="mail-open" class="connectIcon"></ion-icon></a></li>
-                <li><a href="https://github.com/phillipmolock" target="_blank"><ion-icon name="logo-github" class="connectIcon"></ion-icon></a></li>
-                <li><a href="https://www.linkedin.com/in/phillip-molock-1b4a6979/" target="_blank"><ion-icon name="logo-linkedin" class="connectIcon"></ion-icon></a></li>
+                <li><a href="mailto:phillip.molock@outlook.com" onclick="return reportCustomEvent('Email','Clicked');"><ion-icon name="mail-open" class="connectIcon"></ion-icon></a></li>
+                <li><a href="https://github.com/phillipmolock" target="_blank" onclick="return reportCustomEvent('GitHub','Clicked');"><ion-icon name="logo-github" class="connectIcon"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/phillip-molock-1b4a6979/" target="_blank" onclick="return reportCustomEvent('LinkedIn','Clicked');"><ion-icon name="logo-linkedin" class="connectIcon"></ion-icon></a></li>
             </ul>
         </div>
     </main>
@@ -36,9 +36,9 @@
     <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
     <script>(function (w, d, t, r, u) { var f, n, i; w[u] = w[u] || [], f = function () { var o = { ti: "25024713" }; o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad") }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () { var s = this.readyState; s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null) }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i) })(window, document, "script", "//bat.bing.com/bat.js", "uetq");</script>
     <script>
-        function reportCustomEvent() {
+        function reportCustomEvent(ec, ea) {
             window.uetq = window.uetq || [];
-            window.uetq = window.uetq || []; window.uetq.push({ 'ec': 'Resume', 'ea': 'Download'});
+            window.uetq = window.uetq || []; window.uetq.push({ 'ec': ec, 'ea': ea});
         }
     </script>
 </body>
